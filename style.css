@@ -72,14 +72,15 @@ body {
   font-family: var(--main-font);
   font-weight: 500;
   background-color: var(--yellow);
-  font-size: 16px;
+  font-size: 14px;
 }
 
 section {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vw;
+  width: 100vw;
+  height: 100vh;
 }
 
 .visually-hidden {
@@ -100,8 +101,11 @@ section {
   background-color: var(--white);
   border-radius: 10px;
   padding: 20px;
-  width: 380px;
+  width: 320px;
   box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 0.75);
+  @media screen and (min-width: 1440px) {
+    width: 380px;
+  }
 }
 
 .blog__img {
@@ -119,6 +123,7 @@ section {
   margin-bottom: 15px;
   color: var(--gray-950);
   background-color: var(--yellow);
+  cursor: pointer;
 }
 
 .blog__text {
@@ -132,6 +137,11 @@ section {
   color: var(--gray-950);
   margin-bottom: 25px;
 }
+
+.blog__link:hover {
+  color: var(--yellow);
+}
+
 .blog__description {
   margin-bottom: 25px;
 }
