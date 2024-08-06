@@ -126,6 +126,11 @@ section {
   cursor: pointer;
 }
 
+.blog_btn:hover,
+.blog_btn:focus {
+  color: var(--gray-500);
+}
+
 .blog__text {
   font-weight: 500;
   color: var(--gray-950);
@@ -138,7 +143,8 @@ section {
   margin-bottom: 25px;
 }
 
-.blog__link:hover {
+.blog__link:hover,
+.blog__link:focus {
   color: var(--yellow);
 }
 
