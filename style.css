@@ -1,0 +1,72 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+@font-face {
+  font-family: 'Figtree';
+  src: url('/assets/fonts/static/Figtree-SemiBold.ttf');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Figtree';
+  src: url('/assets/fonts/static/Figtree-ExtraBold.ttf');
+  font-weight: 800;
+  font-style: normal;
+}
+
+:root {
+  /* colors */
+  --White: hsl(0, 0%, 100%);
+
+  --Yellow: hsl(47, 88%, 63%);
+  --Gray-500: hsl(0, 0%, 42%);
+  --Gray-950: hsl(0, 0%, 7%);
+
+  /* fonts */
+  --main-font: 'Figtree', sans-serif;
+}
+
+body {
+  color: var(--Gray-500);
+  font-family: var(--main-font);
+  font-weight: 500;
+  background-color: var(--White);
+  font-size: 16px;
+}
